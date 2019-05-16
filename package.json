@@ -1,0 +1,9 @@
+{
+  "name": "gitlab-todo-to-trello",
+  "version": "0.0.0",
+  "bin": "./index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "minimist": "^1.2.0"
+  }
+}
