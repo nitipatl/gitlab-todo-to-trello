@@ -1,5 +1,5 @@
 {
-  "name": "gitlab-todo-to-trello",
+  "name": "pdd-trello",
   "version": "0.0.0",
   "bin": "./index.js",
   "dependencies": {
