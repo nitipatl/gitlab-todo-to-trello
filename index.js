@@ -45,7 +45,6 @@ const main = async () => {
                 diff: row.diff,
             })
         }
-        console.log(found)
     })
     const todoId = await getTodoId()
     found.forEach(row => {
