@@ -25,7 +25,7 @@ const getTodoId = async () => {
     return data.find(row => row.name == '@TODO').id
 }
 const addTask = async (todoId, name, desc) => {
-    const res = await axios.post(`${trelloEndpoint}/cards?idList=idList&keepFromSource=all`, {
+    await axios.post(`${trelloEndpoint}/cards?idList=idList&keepFromSource=all`, {
         name: name,
         desc: desc,
         idList: todoId,
