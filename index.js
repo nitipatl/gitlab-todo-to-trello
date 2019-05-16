@@ -38,7 +38,7 @@ const main = async () => {
     const todos = await getTodos()
     todos.forEach(function (row) {
         const result = row.diff.match(/\+[^\r\n@]*@todo[^\:]*\:\s*([^\r?\n]+)\r?\n/i)
-        if (result[1]) {
+        if (result && result[1]) {
             found.push({
                 file: row.new_path,
                 task: result[1],
